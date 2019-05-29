@@ -1,0 +1,19 @@
+figcaption {
+  position: absolute;
+  top: 300px ;
+  left: 80px;
+  background-color: rgba(0,0,0,.5);
+  color: white;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 30px;
+
+}
+
+
+figure {
+  border: 3px solid #FF4500;
+  box-shadow: 5px 4px 6px black;
+}
