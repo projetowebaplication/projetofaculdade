@@ -16,7 +16,7 @@
       
         <div class="main-login main-center">
           <a href="index.html">  <img src="images/logo4.png" alt="Arena Fitness" />  </a><br><br>
-          <form class="form-horizontal" method="POST" action="php/cadastro.php">
+          <form class="form-horizontal" method="POST" action="cadastro.php">
             
             <div class="form-group">
               <label for="name" class="cols-sm-2 control-label">Nome</label>
