@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt">
     <head> 
@@ -17,7 +20,6 @@
         <div class="main-login main-center">
           <a href="index.html">  <img src="images/logo4.png" alt="Arena Fitness" />  </a><br><br>
           <form class="form-horizontal" method="POST" action="cadastro.php">
-            
             <div class="form-group">
               <label for="name" class="cols-sm-2 control-label">Nome</label>
               <div class="cols-sm-10">
@@ -69,6 +71,12 @@
             </div>
 
             <div class="form-group ">
+                    <?php
+                        if(isset($_SESSION['mensagem'])){
+                        echo $_SESSION['mensagem'];
+                        unset ($_SESSION['mensagem']);
+                        }
+                    ?>  
               <input type="submit" class="btn btn-primary btn-lg btn-block login-button" value="Criar conta">
             </div>
             <div class="login-register">
