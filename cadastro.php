@@ -25,5 +25,6 @@ else{
     $_SESSION['mensagem']="<p style='color:red;'>Usuário não cadastrado.<p>";
     header("Location: matric.php");
 }}
+
 ?>
 $login
