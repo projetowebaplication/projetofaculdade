@@ -13,7 +13,19 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/modal.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
-   
+   <?php 
+        session_start();
+        if((!isset($_SESSION['email'])==true) and (!isset($_SESSION['senha'])==true))
+        {
+            unset($_SESSION['email']);
+            unset($_SESSION['senha']);
+                echo "<script>
+                    alert('Acesso permitido somente a usuário logado');
+                    window.location.href='login.php';
+                    </script>";
+        }
+        $logado=$_SESSION['email'];
+    ?>
   </head>
   <body class="homepage">   
     <header id="header">
@@ -31,14 +43,17 @@
                 
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="planos.html">Planos</a></li>
-                        <li><a href="services.html">Serviços</a></li>
-                        <li class="active"><a href="modal.html">Modalidades</a></li>
-                        <li><a href="contact.html">Contato</a></li>                        
+                        <li><a href="indexlog.html">Home</a></li>
+                        <li><a href="planoslog.html">Planos</a></li>
+                        <li><a href="serviceslog.html">Serviços</a></li>
+                        <li class="active"><a href="modallog.html">Modalidades</a></li>
+                        <li><a href="contactlog.html">Contato</a></li>                        
                     </ul>
                      <ul class="nav navbar-nav navbar-right">
-                         <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                         <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+                     </ul>
+                    <ul class="nav navbar-nav">
+                         <li><a href="mypage.php"><span class="nav navbar-navn"></span>Minha Conta</a></li>
                      </ul>
                 </div>
             </div><!--/.container-->

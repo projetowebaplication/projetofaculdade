@@ -20,10 +20,10 @@
     
     <div class="col-md-4">
       <section class="login-form">
-        <form action="php/acesso.php" method="GET"  role="login">
+        <form action="minhaconta.php" method="POST"  role="login">
         <a href="index.html">  <img src="images/logo4.png" alt="Arena Fitness" />  </a>
             
-            <input type="email" name="email" placeholder="Email" required class="form-control input-lg" />
+            <input type="text" name="login" placeholder="email" required class="form-control input-lg" />
              
           <input type="password" name="senha" class="form-control input-lg" id="password" placeholder="Senha" required="" />
           
@@ -33,7 +33,7 @@
           
           <button type="submit" name="go" class="btn btn-lg btn-primary btn-block">Entrar</button>
           <div>
-            <a href="php/matric.php">Criar conta</a> ou <a href="#">Esqueceu a senha?</a>
+            <a href="matric.php">Criar conta</a> ou <a href="#">Esqueceu a senha?</a>
           </div>
           
         </form>

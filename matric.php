@@ -80,7 +80,7 @@
               <input type="submit" class="btn btn-primary btn-lg btn-block login-button" value="Criar conta">
             </div>
             <div class="login-register">
-                    <a href="login.html">Login</a>
+                    <a href="login.php">Login</a>
                  </div>
           </form>
         </div>
