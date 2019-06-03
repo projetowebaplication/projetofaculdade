@@ -12,19 +12,12 @@ $result_cadastro="INSERT INTO cadastro_clientes(nome,email,username,password,cre
 if($password!=$confirm){
 $_SESSION['mensagem']="<p style='color:red;'>As senhas informadas não coincidem.Tentar novamente.<p>";
 header("Location: matric.php");
-}
-else{
-$result_cadastro="INSERT INTO cadastro_clientes(nome,email,username,password,creat)
- Values('$name','$email','$username','$password',NOW())";
-$resultado_cadastro= mysqli_query($con,$result_cadastro);
-if($con->query($result_cadastro)===TRUE){
+}else
+    {
     $_SESSION['mensagem']="<p style='color:green;'>Usuário cadastrado com sucesso!<p>";
     header("Location: matric.php");
 }
-else{
-    $_SESSION['mensagem']="<p style='color:red;'>Usuário não cadastrado.<p>";
-    header("Location: matric.php");
-}}
+
 
 ?>
 $login
