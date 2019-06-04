@@ -7,7 +7,7 @@ $senha=$_POST['senha'];
 $valida="SELECT* FROM cadastro_clientes WHERE email='$email' AND password='$senha'";
 $result=$con->query($valida);
 if($result->num_rows>0){
-    $_SESSION['email'] = $login;
+    $_SESSION['email'] = $email;
     $_SESSION['senha'] = $senha;
     header('Location:mypage.php');
 }

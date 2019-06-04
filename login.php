@@ -23,7 +23,7 @@
         <form action="minhaconta.php" method="POST"  role="login">
         <a href="index.html">  <img src="images/logo4.png" alt="Arena Fitness" />  </a>
             
-            <input type="text" name="login" placeholder="email" required class="form-control input-lg" />
+            <input type="text" name="email" placeholder="email" required class="form-control input-lg" />
              
           <input type="password" name="senha" class="form-control input-lg" id="password" placeholder="Senha" required="" />
           

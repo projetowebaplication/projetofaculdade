@@ -44,11 +44,11 @@
                 
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li><a href="indexlog.html">Home</a></li>
-                        <li><a href="planoslog.html">Planos</a></li>
-                        <li><a href="serviceslog.html">Serviços</a></li>
-                        <li><a href="modallog.html">Modalidades</a></li>
-                        <li><a href="contactlog.html">Contato</a></li>                        
+                        <li><a href="indexlog.php">Home</a></li>
+                        <li><a href="planoslog.php">Planos</a></li>
+                        <li><a href="serviceslog.php">Serviços</a></li>
+                        <li><a href="modallog.php">Modalidades</a></li>
+                        <li><a href="contactlog.php">Contato</a></li>                        
                     </ul>
                      <ul class="nav navbar-nav navbar-right">
                          <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span>Logout</a></li>
